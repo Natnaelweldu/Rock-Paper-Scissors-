@@ -14,3 +14,14 @@ function getComputerChoice() {
   }
   return choice;
 }
+
+function getHumanChoice() {
+  let choice = prompt("Please enter your choice(r=Rock, p=Paper, s=Scissor): ");
+  if (choice !== "r" && choice !== "p" && choice !== "s") {
+    alert("Please enter a valid option");
+    getHumanChoice();
+  }
+  return choice;
+}
+
+getHumanChoice();
