@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ddd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.rock-box,
+.paper-box,
+.scissors-box {
+  width: 50px;
+  text-align: center;
+  background-color: #ddd;
+  padding: 2px 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+}
