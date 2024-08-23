@@ -8,6 +8,7 @@ let scissorsButton = document.getElementById("scissors-box");
 let result = document.getElementById("result");
 let computerScoreBox = document.getElementById("computerScore");
 let playerScoreBox = document.getElementById("playerScore");
+let container = document.getElementById("container");
 
 function getComputerChoice() {
   let random = Math.floor(Math.random() * 3);
@@ -123,6 +124,22 @@ function totalResult() {
       draws +
       "draws";
   }
+
+  let resetButton = document.createElement("button");
+  resetButton.setAttribute("id", "resetButton");
+  resetButton.textContent = "Reset Game";
+  container.appendChild(resetButton);
+  resetButton.addEventListener("click", resetGame);
+}
+
+function resetGame() {
+  humanScore = 0;
+  computerScore = 0;
+  draws = 0;
+  result.textContent = "";
+  playerScoreBox.innerText = humanScore;
+  computerScoreBox.innerText = computerScore;
+  container.removeChild(resetButton);
 }
 
 getChoice();
