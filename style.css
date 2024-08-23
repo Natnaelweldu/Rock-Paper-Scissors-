@@ -63,3 +63,9 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
 }
+
+.player,
+.computer {
+  display: flex;
+  gap: 10px;
+}
